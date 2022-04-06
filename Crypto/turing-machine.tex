@@ -1,0 +1,13 @@
+$k$-tape Turing machine is a triple $M = (A,Q,τ)$ satisfying:
+
+*  $A$ is a finite **alphabet** that the $k$ tapes contain:
+   $A = \lbrace{\square, \vartriangleright, 0, 1}\rbrace$;
+*  $Q$ is a finite set of **states** that includes $q_{start}, q_{halt} ∈ Q$;
+*  $τ: Q × A^k → Q × A^{k−1} × \lbrace{L,S,R}\rbrace^k$ is the
+   **transition function** of $M$.
+   
+First tape is input tape (read-only), second to $k-1$-st tape are work tapes, $k$-th tape is output tape.
+
+$\square$ is the blank symbol, $\vartriangleright$ is the start symbol
+
+$q_{start}, q_{halt}$ are the start and halting states
