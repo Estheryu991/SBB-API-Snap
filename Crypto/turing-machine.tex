@@ -11,3 +11,31 @@ First tape is input tape (read-only), second to $k-1$-st tape are work tapes, $k
 $\square$ is the blank symbol, $\vartriangleright$ is the start symbol
 
 $q_{start}, q_{halt}$ are the start and halting states
+
+
+### Probabilistic Turing machine
+
+A Turing machine that may choose at every step a move at random according to a
+probability distribution.
+
+Note that such a Turing machine is thus **non-deterministic**.
+
+A probabilistic Turing machine $M$ computes a function
+$f: \lbrace{0, 1}\rbrace^* → \lbrace{0, 1}\rbrace^*$ if
+$$P[f(x) = M(x)] ≥ ⅔
+$$
+
+## Running time
+
+$M$ computes $f: \lbrace{0, 1}\rbrace^* → \lbrace{0, 1}\rbrace^*$ in
+$T(n)$-time, if for every input $x ∈ \lbrace{0, 1}\rbrace^*$, $M$ halts after at
+most $T(|n|)$ steps with output $f(x)$.
+
+### Running times of arithmetic operations
+
+| Operation                                | Complexity |
+| ---------------------------------------- | ---------- |
+| Addition of two $n$-bit numbers          | $O(n)$     |
+| Multiplication of two $n$-bit numbers    | $O(n^2)$   |
+| Raising a number to an $n$-bit power     | $O(n^3)$   |
+| Exhaustive key search for an $n$-bit key | $O(2^n)$   |
