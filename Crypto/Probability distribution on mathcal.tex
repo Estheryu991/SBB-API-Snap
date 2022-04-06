@@ -1,0 +1,15 @@
+By assumption we have for all $c ∈ \mathcal{C}$ that
+$$Pr[\mathbf{c} = c] = \sum_{k \text{ with } c ∈ C(k)}
+Pr[\mathbf[k] = k] Pr[\mathbf{p} = D_k{c}]
+$$
+where $C(k) := \lbrace{E_k(p) : p ∈ \mathcal{P}}\rbrace$. This yields
+$$Pr[\mathbf{c} = c \mid \mathbf{p} = p] =
+\sum_{k \text{ with } c = D_k(p)} Pr[\mathbf{k} = k]
+$$
+Bayes' theorem implies (if $Pr[\mathbf{c} = c] > 0$) that
+$$Pr[\mathbf{p} = p \mid \mathbf{c} = c] =
+\frac{Pr[\mathbf{p} = p] \; Pr[\mathbf{c} = c \mid \mathbf{p} = p]}
+     {Pr[\mathbf{c} = c]}.
+$$
+
+Definition: A cryptosystem has perfect secrecy if $Pr[\mathbf{p} = p \mid \mathbf{c} = c] = Pr[\mathbf{p} = p]$ for all $p ∈ \mathcal{P},c ∈ \mathcal{C}$.
